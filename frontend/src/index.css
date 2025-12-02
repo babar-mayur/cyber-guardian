@@ -20,4 +20,6 @@ body {
 }
 
 * {
-  box-s
+  box-sizing: border-box;
+}
+"@ | Out-File -FilePath "frontend\src\index.css" -Encoding UTF8 -Force

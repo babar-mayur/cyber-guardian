@@ -1,4 +1,5 @@
-﻿from flask import Flask, jsonify, request
+@"
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 from datetime import datetime
 import os
@@ -81,12 +82,13 @@ def submit_complaint():
     })
 
 if __name__ == '__main__':
-    print('  Cyber Guardian API Starting...')
-    print(' Running on http://localhost:5000')
-    print(' API Endpoints:')
+    print('🛡️  Cyber Guardian API Starting...')
+    print('📍 Running on http://localhost:5000')
+    print('📊 API Endpoints:')
     print('   - GET  /api/health')
     print('   - GET  /api/predictions')
     print('   - GET  /api/alerts')
     print('   - GET  /api/locations')
     print('   - POST /api/complaints')
     app.run(debug=True, port=5000, host='0.0.0.0')
+"@ | Out-File -FilePath "backend\app.py" -Encoding UTF8

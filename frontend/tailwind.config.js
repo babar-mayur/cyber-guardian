@@ -14,4 +14,6 @@ module.exports = {
       },
     },
   },
-  
+  plugins: [],
+}
+"@ | Out-File -FilePath "frontend\tailwind.config.js" -Encoding UTF8
